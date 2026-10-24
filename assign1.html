@@ -1,0 +1,266 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Foodie - Online Food Ordering</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #fff8f0;
+        }
+        header {
+            background-color: #e63946;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            background-color: #333;
+            padding: 12px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 12px;
+            font-size: 16px;
+        }
+        nav a:hover {
+            color: orange;
+        }
+        .welcome {
+            background-color: #ffcc80;
+            text-align: center;
+            padding: 35px 15px;
+        }
+        .welcome h2 {
+            color: #8b2500;
+        }
+        .welcome p {
+            font-size: 18px;
+        }
+        .offer {
+            background-color: #ffe5e5;
+            color: #c1121f;
+            text-align: center;
+            padding: 15px;
+            margin: 20px;
+            border: 2px dashed #e63946;
+        }
+        .menu {
+            padding: 20px;
+            text-align: center;
+        }
+        .menu h2 {
+            color: #e63946;
+        }
+        .food-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .food-card {
+            background-color: white;
+            width: 250px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0 3px 8px #ccc;
+        }
+        .food-card img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        .food-card h3 {
+            color: #333;
+        }
+        .price {
+            color: #168039;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .food-card a {
+            display: inline-block;
+            background-color: #e63946;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+        .food-card a:hover {
+            background-color: #a4161a;
+        }
+        .about {
+            background-color: #fff0d9;
+            padding: 25px;
+            text-align: center;
+        }
+        .reviews {
+            padding: 25px;
+            text-align: center;
+        }
+        .review-card {
+            display: inline-block;
+            background-color: white;
+            padding: 15px;
+            margin: 10px;
+            width: 250px;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px #ccc;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+        @media screen and (max-width: 600px) {
+            nav a {
+                display: inline-block;
+                margin: 8px;
+            }
+            .food-card {
+                width: 85%;
+            }
+            .review-card {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Foodie 🍕</h1>
+        <p>Fresh Food Delivered to Your Doorstep!</p>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#offers">Offers</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section class="welcome" id="home">
+        <h2>Welcome to Foodie Restaurant</h2>
+        <p>Order your favourite food online at affordable prices.</p>
+        <p>Delicious food, great taste, and fast delivery!</p>
+    </section>
+    <section class="offer" id="offers">
+        <h2>Special Offers!</h2>
+        <p>Get 20% OFF on your first order.</p>
+        <p>Free delivery on orders above ₹499.</p>
+    </section>
+    <section class="menu" id="menu">
+        <h2>Our Food Menu</h2>
+        <p>Choose your favourite dish</p>
+        <div class="food-container">
+            <div class="food-card">
+                <img src="https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?auto=format&fit=crop&w=600&q=80"
+                     alt="Cheese Pizza">
+                <h3>Cheese Pizza</h3>
+                <p>Category: Pizza</p>
+                <p>Delicious pizza with cheese and vegetables.</p>
+                <p class="price">₹199</p>
+                <a href="mailto:orders@example.com?subject=Order%20Cheese%20Pizza">
+                    Order Now
+                </a>
+            </div>
+            <div class="food-card">
+                <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80"
+                     alt="Veg Burger">
+                <h3>Veg Burger</h3>
+                <p>Category: Burger</p>
+                <p>Crispy vegetable patty with fresh vegetables.</p>
+                <p class="price">₹99</p>
+                <a href="mailto:orders@example.com?subject=Order%20Veg%20Burger">
+                    Order Now
+                </a>
+            </div>
+            <div class="food-card">
+                <img src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c?auto=format&fit=crop&w=600&q=80"
+                     alt="Sushi">
+                <h3>Sushi</h3>
+                <p>Category: Special Food</p>
+                <p>A tasty and fresh Japanese-style dish.</p>
+                <p class="price">₹249</p>
+                <a href="mailto:orders@example.com?subject=Order%20Sushi">
+                    Order Now
+                </a>
+            </div>
+            <div class="food-card">
+                <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=600&q=80"
+                     alt="Margherita Pizza">
+                <h3>Margherita Pizza</h3>
+                <p>Category: Pizza</p>
+                <p>Classic pizza topped with cheese and herbs.</p>
+                <p class="price">₹179</p>
+                <a href="mailto:orders@example.com?subject=Order%20Margherita%20Pizza">
+                    Order Now
+                </a>
+            </div>
+            <div class="food-card">
+                <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=600&q=80"
+                     alt="Chicken Pizza">
+                <h3>Special Pizza</h3>
+                <p>Category: Special Food</p>
+                <p>A flavourful pizza with delicious toppings.</p>
+                <p class="price">₹299</p>
+                <a href="mailto:orders@example.com?subject=Order%20Special%20Pizza">
+                    Order Now
+                </a>
+            </div>
+            <div class="food-card">
+                <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=600&q=80"
+                     alt="Grilled Food">
+                <h3>Grilled Special</h3>
+                <p>Category: Grilled Food</p>
+                <p>A tasty grilled dish prepared with fresh ingredients.</p>
+                <p class="price">₹229</p>
+                <a href="mailto:orders@example.com?subject=Order%20Grilled%20Special">
+                    Order Now
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="about">
+        <h2>About Our Restaurant</h2>
+        <p>Foodie is an online food ordering website created for food lovers.</p>
+        <p>We offer tasty food, affordable prices, and friendly service.</p>
+        <p><b>Opening Hours:</b> 10:00 AM - 10:00 PM</p>
+        <p><b>Delivery:</b> Available in selected areas</p>
+    </section>
+    <section class="reviews" id="reviews">
+        <h2>Customer Reviews</h2>
+        <div class="review-card">
+            <h3>Rahul</h3>
+            <p>⭐⭐⭐⭐⭐</p>
+            <p>"The pizza was delicious and fresh!"</p>
+        </div>
+        <div class="review-card">
+            <h3>Priya</h3>
+            <p>⭐⭐⭐⭐⭐</p>
+            <p>"Good food quality and affordable prices."</p>
+        </div>
+        <div class="review-card">
+            <h3>Arjun</h3>
+            <p>⭐⭐⭐⭐</p>
+            <p>"A simple and convenient food ordering website."</p>
+        </div>
+    </section>
+    <footer id="contact">
+        <h3>Contact Us</h3>
+        <p>Email: orders@example.com</p>
+        <p>Phone: 98765 43210</p>
+        <p>Address: Foodie Restaurant, Vijayawada, Andhra Pradesh</p>
+        <p>© 2026 Foodie Restaurant. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
